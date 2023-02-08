@@ -2,7 +2,7 @@
  * @Author: xuhua
  * @Date: 2023-02-07 17:39:12
  * @LastEditors: xuhua
- * @LastEditTime: 2023-02-08 09:51:35
+ * @LastEditTime: 2023-02-08 11:31:05
  * @FilePath: /demo/src/user/user.controller.ts
  * @Description:  用户控制器
  */
@@ -10,9 +10,12 @@ import { Controller, Get, Post, Body, Patch, Param, Delete, Version, VERSION_NEU
 import { UserService } from './user.service';
 import { CreateUserDto } from './dto/create-user.dto';
 import { UpdateUserDto } from './dto/update-user.dto';
-import { BusinessException } from 'src/common/exceptions/basiness.exception';
+import { BusinessException } from '@/common/exceptions/business.exception';
 import { ConfigService } from '@nestjs/config';
-@Controller('user')
+@Controller({
+  version: '1',
+  path: 'user',
+})
 export class UserController {
   constructor(private readonly userService: UserService, private readonly configService: ConfigService) {}
 

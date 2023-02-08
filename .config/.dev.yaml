@@ -1,3 +1,11 @@
+FEISHU_CONFIG:
+  FEISHU_URL: https://open.feishu.cn/open-apis
+  FEISHU_API_HOST: https://open.feishu.cn
+  FEISHU_API_ID: cli_a369be4565f8d00b
+  FEISHU_API_SECRET: 10B20fvD90jNGDRI1oEtWelecRp0GVLR
+
+APP_TOKEN_CACHE_KEY: APP_TOKEN_CACHE_KEY
+
 TEST_VALUE:
-  name: Cookie,
+  name: Cookie
   test_value: Xuhua

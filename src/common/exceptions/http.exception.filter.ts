@@ -2,13 +2,13 @@
  * @Author: xuhua
  * @Date: 2023-02-07 18:03:09
  * @LastEditors: xuhua
- * @LastEditTime: 2023-02-07 18:26:25
+ * @LastEditTime: 2023-02-08 10:25:42
  * @FilePath: /demo/src/common/exceptions/http.exception.filter.ts
  * @Description:  处理请求异常,异常过滤器
  */
 import { FastifyReply, FastifyRequest } from 'fastify';
 import { ExceptionFilter, Catch, ArgumentsHost, HttpException, HttpStatus } from '@nestjs/common';
-import { BusinessException } from './basiness.exception';
+import { BusinessException } from './business.exception';
 
 @Catch(HttpException)
 export class HttpExceptionFilter implements ExceptionFilter {

@@ -2,8 +2,8 @@
  * @Author: xuhua
  * @Date: 2023-02-07 18:17:27
  * @LastEditors: xuhua
- * @LastEditTime: 2023-02-07 18:24:00
- * @FilePath: /demo/src/common/exceptions/basiness.exception.ts
+ * @LastEditTime: 2023-02-08 10:25:28
+ * @FilePath: /demo/src/common/exceptions/business.exception.ts
  * @Description:  业务运行中预知且主动抛出异常
  */
 import { HttpException, HttpStatus } from '@nestjs/common';
