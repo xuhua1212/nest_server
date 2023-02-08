@@ -1,3 +1,11 @@
+<!--
+ * @Author: xuhua
+ * @Date: 2023-02-07 17:27:34
+ * @LastEditors: xuhua
+ * @LastEditTime: 2023-02-08 09:57:22
+ * @FilePath: /demo/README.md
+ * @Description:  
+-->
 <p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
 </p>
@@ -40,6 +48,9 @@ $ yarn run start
 
 # watch mode
 $ yarn run start:dev
+
+# hot watch mode
+$ yarn run start:hotdev
 
 # production mode
 $ yarn run start:prod
