@@ -2,7 +2,7 @@
  * @Author: xuhua
  * @Date: 2023-02-07 17:27:34
  * @LastEditors: xuhua
- * @LastEditTime: 2023-02-08 10:57:37
+ * @LastEditTime: 2023-02-10 17:38:40
  * @FilePath: /demo/src/main.ts
  * @Description:  项目入口文件
  */
@@ -37,7 +37,7 @@ async function bootstrap() {
 
   // 接口版本管理 v1/v2
   app.enableVersioning({
-    defaultVersion: [VERSION_NEUTRAL, '1'],
+    defaultVersion: [VERSION_NEUTRAL],
     // defaultVersion: '1',
     type: VersioningType.URI,
   });
@@ -50,6 +50,6 @@ async function bootstrap() {
     module.hot.accept();
     module.hot.dispose(() => app.close());
   }
-  await app.listen(3000);
+  await app.listen(8080);
 }
 bootstrap();

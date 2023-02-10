@@ -1,12 +1,12 @@
+/*
+ * @Author: xuhua
+ * @Date: 2023-02-07 17:27:34
+ * @LastEditors: xuhua
+ * @LastEditTime: 2023-02-10 17:40:48
+ * @FilePath: /demo/src/app.controller.ts
+ * @Description:
+ */
 import { Controller, Get } from '@nestjs/common';
-import { AppService } from './app.service';
 
 @Controller()
-export class AppController {
-  constructor(private readonly appService: AppService) {}
-
-  @Get()
-  getHello(): string {
-    return this.appService.getHello();
-  }
-}
+export class AppController {}
